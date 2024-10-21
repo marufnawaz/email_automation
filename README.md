@@ -28,7 +28,7 @@ pip install schedule
 ### 1. Importing Required Libraries
 The script uses various Python libraries for email handling (`smtplib`, `MIME`), file attachment (`encoders`), and scheduling (`schedule`).
 
-```
+python```
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
