@@ -13,7 +13,7 @@ This Python project automates the process of sending daily email reports with a 
 
 Ensure you have the following Python libraries installed:
 
-```
+```python
 pip install schedule
 ```
 
