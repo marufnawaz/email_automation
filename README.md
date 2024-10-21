@@ -43,7 +43,7 @@ from datetime import datetime
 
 Define the necessary email parameters like sender and receiver email addresses, subject, SMTP server details, and login credentials.
 
-```
+```python
 # Email configuration
 sender_email = "maruf50@gmail.com"
 receiver_email = "maruf50@outlook.com"
@@ -59,7 +59,7 @@ password = "6754 4784 6484 3663"  # This is a placeholder; use environment varia
 
 The report file path is generated dynamically based on the current date (e.g., `report_2024-10-20.txt`).
 
-```
+```python
 def get_file_path():
     today = datetime.now().strftime("%Y-%m-%d")
     file_path = f"D:\\Python email\\report_{today}.txt"
@@ -74,7 +74,7 @@ The `send_email` function:
 - Attaches the body text and the dynamically generated report.
 - Handles file-related and SMTP errors.
 
-```
+```python
 def send_email():
     file_path = get_file_path()
     msg = MIMEMultipart()
@@ -110,7 +110,7 @@ def send_email():
 ### 5. Scheduling the Task
 The `schedule` library is used to trigger the `send_email` function at a specific time every day (in this case, 23:04).
 
-```
+```python
 schedule.every().day.at("23:04").do(send_email)
 
 while True:
@@ -121,7 +121,7 @@ while True:
 
 To run the script, simply execute:
 
-```
+```python
 python main.py
 ```
 
