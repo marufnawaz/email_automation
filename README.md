@@ -1,5 +1,7 @@
 # Daily Email Report Automation with Python
 
+![Logo](https://github.com/marufnawaz/email_automation/blob/main/1707140445728.png)
+
 This Python project automates the process of sending daily email reports with a file attachment. The script schedules the email to be sent at a specific time each day using the `schedule` library. The attached report file is dynamically named based on the current date.
 
 ## Features
